@@ -1,6 +1,9 @@
 "use client";
 
-import { showdevelopment, Svideo3 } from "@/assets";
+import { showdevelopment } from "@/assets";
+
+const Svideo06 = "/video/Svideo06.mp4";
+
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";
 import { heroSectionInfo, workProcessInfo2 } from "@/constant/group";
@@ -47,8 +50,8 @@ const ShowDevelopmentPage = () => {
         <BigVideoBox
           item={{
             titleCenter: true,
-            title: "Пример реальной установки сцены",
-            src: Svideo3,
+            title: "Пример реальной установки сцены 11",
+            src: Svideo06,
             videoTitle: "Тайм-лапс возведение сцены",
             videoDescription: "Перед концертом Кипелова",
           }}

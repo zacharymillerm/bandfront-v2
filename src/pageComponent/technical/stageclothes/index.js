@@ -1,6 +1,8 @@
 "use client";
 
-import { Svideo3 } from "@/assets";
+// import { Svideo04 } from "@/assets";
+
+const Svideo04 = "/video/Svideo04.mp4";
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";
 import SwiperSection from "@/components/Swiper/Swiper";
@@ -31,7 +33,7 @@ const StageClothesPage = () => {
         <EquipmentCard data={equipmentsCardInfo.stage} title="Одежда сцены" />
         <BigVideoBox
           item={{
-            src: Svideo3,
+            src: Svideo04,
             videoTitle: "Тайм-лапс возведение сцены",
             videoDescription: "Перед концертом Кипелова",
           }}

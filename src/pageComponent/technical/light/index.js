@@ -1,6 +1,8 @@
 "use client";
 
-import { Svideo5 } from "@/assets";
+// import { Svideo01 } from "@/assets";
+const Svideo01 = "/video/Svideo01.mp4";
+
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";
 import SwiperSection from "@/components/Swiper/Swiper";
@@ -23,7 +25,7 @@ const LightPage = () => {
         <EquipmentCard data={equipmentsCardInfo.light} title="Cвет" />
         <BigVideoBox
           item={{
-            src: Svideo5,
+            src: Svideo01,
             videoTitle: "Cветовой Меч",
             videoDescription: "Световой концерт",
           }}
