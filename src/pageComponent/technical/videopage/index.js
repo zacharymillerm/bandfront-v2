@@ -1,7 +1,7 @@
 "use client";
 
-// import { Svideo03 } from "@/assets";
-const Svideo03 = "/video/Svideo03.mp4";
+import { Svideo03 } from "@/assets";
+// const Svideo03 = "/video/Svideo03.mp4";
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";
 import SwiperSection from "@/components/Swiper/Swiper";

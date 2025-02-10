@@ -1,7 +1,7 @@
 "use client";
 
-// import { Svideo01 } from "@/assets";
-const Svideo01 = "/video/Svideo01.mp4";
+import { Svideo01 } from "@/assets";
+// const Svideo01 = "/video/Svideo01.mp4";
 
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";

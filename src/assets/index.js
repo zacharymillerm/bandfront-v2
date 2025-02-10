@@ -127,10 +127,10 @@ import textBlog from "./blog/textBlog.svg";
 
 //video
 const smallCardVideo = "/video/smallCardVideo.mp4";
-// const Svideo01 = "/video/Svideo01.mp4";
-// const Svideo03 = "/video/Svideo03.mp4";
-// const Svideo04 = "/video/Svideo04.mp4";
-// const Svideo06 = "/video/Svideo06.mp4";
+const Svideo01 = "/video/Svideo01.mp4";
+const Svideo03 = "/video/Svideo03.mp4";
+const Svideo04 = "/video/Svideo04.mp4";
+const Svideo06 = "/video/Svideo06.mp4";
 const Svideo1 = "/video/Svideo1.mp4";
 const Svideo2 = "/video/Svideo2.mp4";
 const Svideo3 = "/video/Svideo3.mp4";
@@ -369,10 +369,10 @@ export {
   video3,
   //video
   smallCardVideo,
-  // Svideo01,
-  // Svideo03,
-  // Svideo04,
-  // Svideo06,
+  Svideo01,
+  Svideo03,
+  Svideo04,
+  Svideo06,
   Svideo1,
   Svideo2,
   Svideo3,

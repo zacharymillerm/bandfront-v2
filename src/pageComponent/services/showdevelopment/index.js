@@ -1,8 +1,8 @@
 "use client";
 
-import { showdevelopment } from "@/assets";
+import { showdevelopment, Svideo06 } from "@/assets";
 
-const Svideo06 = "/video/Svideo06.mp4";
+// const Svideo06 = "/video/Svideo06.mp4";
 
 import { BigVideoBox } from "@/components/Boxes";
 import HeroSample from "@/components/HeroSample/HeroSample";
