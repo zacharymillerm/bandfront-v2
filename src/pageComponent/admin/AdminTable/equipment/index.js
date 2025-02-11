@@ -38,19 +38,36 @@ const EquipmentTable = ({ id }) => {
   });
 
   const moveRow = (tableData, setTableData, fromIndex, toIndex) => {
-    if (toIndex >= 0 && toIndex < tableData?.length) {
+
+    console.log(firstId, toIndex)
+    if (toIndex >= 0 && toIndex < tableData.length) {
+      // Swap elements locally before making API call
+      let updatedTableData = [...tableData];
+      [updatedTableData[fromIndex], updatedTableData[toIndex]] = [
+        updatedTableData[toIndex],
+        updatedTableData[fromIndex],
+      ];
+
+      // Update state immediately
+      setTableData(updatedTableData);
+
+      // Perform API call for persistent update
       const firstId = tableData[fromIndex].id;
       const secondId = tableData[toIndex].id;
+
+      console.log(firstId, secondId)
+
       const formData = {
         firstBlogId: firstId,
         secondBlogId: secondId,
       };
-      swapId(formData).then(() => {
-        getEquips().then((data) => {
+
+      swapId(formData, "factorys")
+        .then(() => getFactorys())
+        .then((data) => {
           let temp = addId(data);
-          setEquipment(temp);
+          setTableData(temp);
         });
-      });
     }
   };
 

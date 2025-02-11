@@ -29,13 +29,13 @@ const nextConfig = {
   },
   images: {
     // domains: ["38.60.163.86"], // Add the IP address as a domain
-    domains: ["89.111.141.133"],
-    // domains: ["localhost"], // Add the IP address as a domain1
+    // domains: ["89.111.141.133"],
+    domains: ["localhost"], // Add the IP address as a domain1
     remotePatterns: [
       {
         protocol: "http",
-        hostname:"89.111.141.133",
-        // hostname: "localhost",
+        // hostname:"89.111.141.133",
+        hostname: "localhost",
         port: "8000",
         // hostname: "bandback-production.up.railway.app",
         pathname: "/storage/uploads/**",

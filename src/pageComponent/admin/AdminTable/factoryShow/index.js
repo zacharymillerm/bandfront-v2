@@ -47,10 +47,10 @@ const FactoryShowTable = ({ id }) => {
         firstBlogId: firstId,
         secondBlogId: secondId,
       };
-      swapId(formData, 'factorys').then(() => {
+      swapId(formData, "factorys").then(() => {
         getFactorys().then((data) => {
           let temp = addId(data);
-          setFactory(temp);
+          setTableData(temp);
         });
       });
     }
@@ -113,9 +113,9 @@ const FactoryShowTable = ({ id }) => {
         let url = `/admin/${type}`;
         let Data = params.row;
         const queryParams = new URLSearchParams();
-        
+
         // Convert the Data object to query parameters
-        Object.keys(Data).forEach(key => {
+        Object.keys(Data).forEach((key) => {
           // Handle arrays specially
           if (Array.isArray(Data[key])) {
             queryParams.append(key, JSON.stringify(Data[key]));

@@ -173,7 +173,7 @@ export const swapId = async (formdata, tableName) => {
     const response = await apiClient.post(`/`+ tableName + `/swap/order`,formdata, {
       headers: {
         Authorization: `Bearer ${token}`,
-        "Content-Type": "multipart/form-data"
+        "Content-Type": "application/json"
       }
     })
     if (response.status !== 200) {

@@ -219,6 +219,7 @@ const DetailSection = ({
       date: "",
       venue: "",
       cities: "",
+      eventTitle: "",
       equipment: "",
       name: "",
       default_site: "",
@@ -234,6 +235,8 @@ const DetailSection = ({
   const handleSearch = (e) => {
     e.preventDefault();
     handleClose();
+
+    console.log(data);
 
     const filteredData = data.filter(
       (item) =>
@@ -265,6 +268,7 @@ const DetailSection = ({
           item.equipment_names.some((equipment) =>
             equipment.toUpperCase().includes(searchData.equipment.toUpperCase())
           )) &&
+        (!searchData.eventTitle || item.eventTitle === searchData.eventTitle) &&
         (!searchData.default_equipment ||
           searchData.default_equipment.every((default_equipment) =>
             item.equipment_type.includes(default_equipment)
